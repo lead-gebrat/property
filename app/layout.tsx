@@ -3,6 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ETproperty",
+  description: "ETproperty - Your trusted partner in property management",
 };
 
 export default function RootLayout({
