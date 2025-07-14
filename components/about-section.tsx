@@ -115,7 +115,6 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <WhyChooseUs></WhyChooseUs>
         {/* Bottom Stats Bar */}
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -175,31 +174,3 @@ const features = [
       "Automate rent collection, reminders, and maintenance requests.",
   },
 ];
-
-export function WhyChooseUs() {
-  return (
-    <div className="py-12 px-4 sm:px-8 lg:px-16">
-      <h2 className="text-3xl font-semibold text-gray-800 text-center mb-10">
-        Why Choose Us
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300"
-          >
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full shadow-lg flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
-              <span className="text-xl font-bold text-gray-800">
-                {index + 1}
-              </span>
-            </div>
-            <h3 className="text-lg font-medium text-gray-800 mb-2">
-              {feature.title}
-            </h3>
-            <p className="text-sm text-gray-600">{feature.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
